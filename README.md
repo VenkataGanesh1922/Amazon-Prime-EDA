@@ -1,126 +1,82 @@
-# Amazon Prime Movies and TV Shows – Exploratory Data Analysis (EDA)
+# Amazon Prime Movies and TV Shows — EDA & Machine Learning
 
-## 1. Project Overview
+## Project Overview
+This project explores the Amazon Prime Movies and TV Shows dataset through Exploratory Data Analysis (EDA) and Machine Learning (ML).
 
-This project focuses on Exploratory Data Analysis (EDA) of the Amazon Prime Movies and TV Shows dataset. The objective is to analyze the content available on Amazon Prime Video and discover meaningful patterns related to content types, genres, release years, countries, ratings, runtime, IMDb scores, TMDb popularity, and cast and crew information.
+The project analyzes content characteristics, identifies patterns and trends, and builds machine learning models to classify titles as Movies or TV Shows.
 
-Python-based data analysis and visualization techniques are used to understand the dataset and generate useful insights.
+## Project Objectives
+- Explore and understand the Amazon Prime dataset.
+- Perform data cleaning and preprocessing.
+- Analyze Movies and TV Shows using visualizations.
+- Identify important patterns and trends.
+- Build classification models to predict content type.
+- Compare model performance and save the best model.
 
-## 2. Problem Statement
+## Dataset
+The project uses two datasets:
+- `titles.csv` — information about movies and TV shows.
+- `credits.csv` — cast and crew information.
 
-Streaming platforms contain thousands of movies and TV shows. Understanding the distribution, characteristics, popularity, and audience ratings of this content can help platforms make better content-related decisions.
+## Project Structure
+- `Amazon_Prime_EDA.ipynb` — Exploratory Data Analysis.
+- `Amazon_Prime_ML.ipynb` — Machine Learning implementation.
+- `Amazon_Prime_ML_Submission.zip` — Saved ML models, graphs and results.
+- `graphs/` — EDA visualizations.
+- `titles.csv.zip` — Titles dataset.
+- `credits.csv.zip` — Credits dataset.
 
-This project explores the Amazon Prime catalogue to identify patterns and trends that can support content planning and audience engagement.
+## Exploratory Data Analysis (EDA)
+EDA includes:
+- Data inspection and cleaning.
+- Analysis of Movies and TV Shows.
+- Content distribution analysis.
+- Release year analysis.
+- Genre and country analysis.
+- Ratings and runtime analysis.
+- Data visualization using Matplotlib and Seaborn.
 
-## 3. Business Objective
+## Machine Learning
+The target variable is `type`, which classifies content into:
+- MOVIE
+- SHOW
 
-- Analyze the distribution of movies and TV shows.
-- Identify popular genres and content categories.
-- Understand content release trends over the years.
-- Examine IMDb ratings and TMDb popularity.
-- Analyze the distribution of TV shows by number of seasons.
-- Study runtime patterns of movies.
-- Identify major contributing actors and directors.
-- Generate actionable insights for content strategy.
+### Models Implemented
+1. Logistic Regression
+2. Random Forest Classifier
 
-## 4. Dataset Description
+### Best Model Results
+The Random Forest model achieved the following results in the test evaluation:
 
-The project uses Amazon Prime Movies and TV Shows data.
+- Accuracy: **97.67%**
+- Macro F1-score: **0.9527**
 
-The dataset includes information such as:
+The Random Forest model was selected based on its macro F1-score.
 
-- Content ID
-- Title
-- Content type
-- Description
-- Release year
-- Age certification
-- Runtime
-- Genres
-- Production countries
-- Number of seasons
-- IMDb ID and score
-- IMDb votes
-- TMDb popularity and score
-- Cast and director credits
-
-The merged dataset contains **125,186 rows and 19 columns**.
-
-## 5. Technologies Used
-
+## Technologies Used
 - Python
+- Google Colab
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- Jupyter Notebook
+- Scikit-learn
+- TF-IDF
+- Joblib
+- GitHub
 
-## 6. Exploratory Data Analysis
-
-The project includes data loading, dataset inspection, missing-value analysis, duplicate checking, variable analysis, data cleaning, and visualization.
-
-A total of 15 visualizations were developed to explore different aspects of the Amazon Prime catalogue.
-
-## 7. Key Analysis Areas
-
-1. Content type distribution
-2. Age certification analysis
-3. Release decade analysis
-4. Production country analysis
-5. Genre distribution
-6. TV show season distribution
-7. Runtime distribution
-8. IMDb score analysis
-9. TMDb score analysis
-10. IMDb votes analysis
-11. Top actors analysis
-12. Top directors analysis
-13. Most popular titles analysis
-14. Correlation heatmap
-15. Pair plot analysis
-
-## 8. Project Structure
-
-```text
-Amazon-Prime-EDA/
-│
-├── graphs/
-│   └── Visualization images
-│
-├── Dataset/
-│   ├── credits.csv.zip
-│   └── titles.csv.zip
-│
-├── Amazon_Prime_EDA.ipynb
-│
-├── amazon_prime_merged.zip
-│
-└── README.md
-```
-
-## 9. How to Run the Project
-
+## How to Run
 1. Clone or download this repository.
-2. Extract the compressed dataset files.
-3. Install the required Python libraries.
-4. Open the Jupyter Notebook.
-5. Update the dataset paths if necessary.
-6. Execute the notebook cells sequentially.
+2. Open the EDA notebook in Google Colab.
+3. Upload or connect the required datasets.
+4. Run the notebook cells sequentially.
+5. Open the ML notebook and connect the datasets.
+6. Run the ML workflow to train and evaluate the models.
 
-Install dependencies using:
+## Conclusion
+This project combines Exploratory Data Analysis and Machine Learning to understand and classify Amazon Prime Movies and TV Shows. The Random Forest model achieved the best performance among the implemented models.
 
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
-```
+## Author
+**Venkata Ganesh Naik**
 
-## 10. Conclusion
-
-This project provides an exploratory understanding of the Amazon Prime Movies and TV Shows catalogue through data analysis and visualization. The findings help identify content distribution patterns, release trends, audience ratings, popularity, and contributions from actors and directors.
-
-The analysis demonstrates how data visualization and exploratory data analysis can transform raw streaming-platform data into meaningful insights that support informed business decisions.
-
-## 11. Author
-
-**Venkata Ganesh Naik Banavath**
-
-GitHub: https://github.com/VenkataGanesh1922
+GitHub: [VenkataGanesh1922](https://github.com/VenkataGanesh1922)
