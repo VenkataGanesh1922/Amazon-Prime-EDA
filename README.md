@@ -5,6 +5,10 @@ This project explores the Amazon Prime Movies and TV Shows dataset through Explo
 
 The project analyzes content characteristics, identifies patterns and trends, and builds machine learning models to classify titles as Movies or TV Shows.
 
+## GitHub Repository
+
+Project Repository: https://github.com/VenkataGanesh1922/Amazon-Prime-EDA
+
 ## Project Objectives
 - Explore and understand the Amazon Prime dataset.
 - Perform data cleaning and preprocessing.
